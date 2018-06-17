@@ -28,6 +28,9 @@ export default class Home extends React.Component {
                   <Button title="Like"
                         onPress={ ()=> this.gotoPage("Like")} />
 
+                    <Button title="FileSys"
+                onPress={ ()=> this.gotoPage("FileSys")} />
+
             </View>
         )
     }

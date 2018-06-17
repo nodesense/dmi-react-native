@@ -23,10 +23,14 @@ import Settings from "./components/Settings";
 import Home from "./components/Home";
 import ProductList from "./components/ProductList";
 
+import FileSys from "./components/FileSys";
+
 const StackNavigator = createStackNavigator({
   Home: {
     screen: Home
   },
+
+  FileSys: FileSys,
 
   "About": {
     screen: About
