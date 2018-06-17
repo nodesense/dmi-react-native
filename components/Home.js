@@ -31,6 +31,10 @@ export default class Home extends React.Component {
                     <Button title="FileSys"
                 onPress={ ()=> this.gotoPage("FileSys")} />
 
+            <Button title="CameraRollView"
+                onPress={ ()=> this.gotoPage("CameraRollView")} />
+
+
             </View>
         )
     }

@@ -24,6 +24,7 @@ import Home from "./components/Home";
 import ProductList from "./components/ProductList";
 
 import FileSys from "./components/FileSys";
+import CameraRollView from "./components/CameraRollView";
 
 const StackNavigator = createStackNavigator({
   Home: {
@@ -31,6 +32,8 @@ const StackNavigator = createStackNavigator({
   },
 
   FileSys: FileSys,
+
+  CameraRollView: CameraRollView,
 
   "About": {
     screen: About
