@@ -12,7 +12,9 @@ export default class Home extends React.Component {
     }
 
     gotoPage = (pageName) => {
-        this.props.navigation.navigate(pageName)
+        const address = {city: 'Delhi', state: 'Delhi'}
+
+        this.props.navigation.navigate(pageName, {address})
     }
 
     render() {

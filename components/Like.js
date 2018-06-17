@@ -19,6 +19,11 @@ const Help=Platform.select({
 
 
 export default class Like extends React.Component {
+
+    static navigationOptions = {
+        title: "Like"
+    }
+
     constructor(props) {
         super(props)
 

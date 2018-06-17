@@ -12,7 +12,8 @@ import {
   View
 } from 'react-native';
 
-import {createStackNavigator} from 'react-navigation';
+import {createStackNavigator, 
+        createTabNavigator} from 'react-navigation';
 
 
 import Like from "./components/Like";
@@ -42,6 +43,18 @@ const StackNavigator = createStackNavigator({
   "ProductList": {
     screen: ProductList
   }
+} )
+
+const TabNavigator = createTabNavigator({
+  Home: {
+    screen: StackNavigator
+  },
+  ProductList: {
+    screen: ProductList
+  },
+  Settings: {
+    screen: Settings
+  }
 })
 
 
@@ -57,7 +70,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <StackNavigator />
+        <TabNavigator />
       </View>
     );
   }
